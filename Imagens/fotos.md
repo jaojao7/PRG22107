@@ -1,0 +1,1 @@
+# PASTA DE IMAGENS
