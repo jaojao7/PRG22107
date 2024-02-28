@@ -1,6 +1,6 @@
 # Exercícios C++ - Atividade I 
 
-##João Pedro de Araújo Duarte - 2024/1
+## João Pedro de Araújo Duarte - 2024/1
 
 
 ## Exercício 1
