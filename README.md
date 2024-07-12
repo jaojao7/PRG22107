@@ -1,4 +1,4 @@
-# PRG22107_231
+# PRG22107
 <img src="./Imagens/ifsc.png" width="300">
 Repositório destinado as atividades da disciplina de programação orientada a objetos.
 
