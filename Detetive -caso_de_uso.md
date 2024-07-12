@@ -61,7 +61,8 @@ ALTA
  # **Fluxo Principal!**
 
 **Info:** Esta é uma das seções principais do caso de uso. É onde descrevemos os passos entre o ator e o sistema. O fluxo principal é o cenário que mais acontece no caso de uso e/ou o mais importante.
-1. Cria uma conexão;
+1. Cria uma conexão na rede para acesso dos jogadores;
+2. Conexão estabelecida e jogadores conectados;
 1. Sorteia o crime;
 1. O sistema “mistura” e distribui as cartas igualmente;
 1. Cada jogador verifica suas cartas;
