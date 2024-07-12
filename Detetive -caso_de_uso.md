@@ -77,7 +77,7 @@ ALTA
 1. O jogador assinala a carta que foi mostrada;
 1. Cada jogador poderá dar somente um palpite acusação, considerado o palpite final daquele jogador;
     1. Se acertar o palpite acusação o usuário vence e a partida é finalizada;
-    1) Se errar o palpite acusação o usuário é eliminado e suas cartas são reveladas para todos os jogadores que continuam na partida.
+    1. Se errar o palpite acusação o usuário é eliminado e suas cartas são reveladas para todos os jogadores que continuam na partida.
     1. O fluxo retorna ao jogo e passa o palpite para o próximo jogador;
     1. O sistema mostra quando o jogador acerta as três cartas no palpite;
     1. A rodada é encerrada informando o resultado aos jogadores;
