@@ -4,4 +4,4 @@ Repositório destinado as atividades da disciplina de programação orientada a 
 
 ##### Clique nos tópicos abaixo para abrir a página referente:
 
-* [DIAGRAMA DE CASO DE USO](https://github.com/jaojao7/PRG22107/blob/main/Detetive%20-caso_de_uso.md)
+* [ANÁLISE DE PROJETO ORIENTADO A OBJETOS](https://github.com/jaojao7/PRG22107/blob/main/Detetive%20-caso_de_uso.md)
