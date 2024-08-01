@@ -82,3 +82,8 @@ Não há. O jogo é encerrado e as vitórias não são computadas.
 1. Cada jogador possui a chance de um palpite por rodada;
 1. É possível dar um palpite quando o jogador tem uma ou duas das cartas do palpite na mão.
 1. Cada jogador poderá dar somente UM palpite acusação no jogo todo.
+
+# **Diagrama**
+
+
+![PRG22107/Imagens/Detetive.png](https://github.com/jaojao7/PRG22107/blob/main/Imagens/Detetive.png)
