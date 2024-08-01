@@ -43,7 +43,7 @@ ALTA
 
  # **Condição de Entrada**
 
-**Info:** Neste campo definimos qual ação do ator dará início à interação com o caso de uso em questão. O jogador anfitrião solicita o início de uma nova  rodada do jogo.
+O jogador anfitrião solicita o início de uma nova  rodada do jogo.
 
  # **Fluxo Principal**
 
