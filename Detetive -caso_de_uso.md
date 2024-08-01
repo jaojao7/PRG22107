@@ -11,8 +11,9 @@ Diana Macedo Rodrigues, Giovanna Liz Souza, João Pedro de Araújo Duarte
 
 **Análise e Projeto Orientado à Objetos**
 
-1. **Caso de Uso: Jogar Detetive**
-    # **Objetivo**
+**Caso de Uso: Jogar Detetive**
+
+# **Objetivo**
 
 Este caso de uso descreve um jogo de cartas onde tem um caso de assassinato e o objetivo é descobrir o ator do crime, a arma utilizada, e em qual localização ocorreu. 
 
