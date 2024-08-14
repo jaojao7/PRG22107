@@ -6,6 +6,7 @@
 #include <map>
 #include <set>
 
+
 using namespace std;
 
 class Carta {
@@ -112,8 +113,10 @@ private:
     }
 
     int rolarDado() {
-        uniform_int_distribution<int> dist(1, 6);
-        return dist(rng);
+        std::random_device dev;
+        std::mt19937 rng(dev());
+        std::uniform_int_distribution<std::mt19937::result_type> dist6(1,6); 
+        return dist6(rng);
     }
 
     void moverJogador(Jogador& jogador) {
@@ -218,7 +221,11 @@ public:
                 if (jogador.anfitriao) {
                     moverJogador(jogador);
                     jogoAtivo = darPalpite(jogador);
-                    if (!jogoAtivo) break;
+                    if (!jogoAtivo) {
+                        std::system("cls");
+                        cout << "PARABENS VOCE RESOLVEU!" << endl;
+                        break;
+                    }
                 } else {
                     // Mostrar cartas dos bots somente se um palpite é feito com uma carta do bot
                     jogador.mostrarCartas = false;
@@ -290,12 +297,12 @@ public:
 
         if (!cartaBot.empty()) {
             cout << "Atencao: O seu palpite inclui uma carta que um bot possui. A carta é: " << cartaBot << "." << endl;
-            for (auto& jogadorBot : jogadores) {
-                if (!jogadorBot.anfitriao) {
-                    jogadorBot.mostrarCartas = true;
-                    jogadorBot.mostrarCartasJogador();
-                }
-            }
+            // for (auto& jogadorBot : jogadores) {
+            //     if (!jogadorBot.anfitriao) {
+            //         jogadorBot.mostrarCartas = true;
+            //         jogadorBot.mostrarCartasJogador();
+            //     }
+            // }
         }
 
         bool resultado = verificarPalpite(Palpite(suspeito, arma, local));
@@ -326,5 +333,7 @@ int main() {
     Jogo jogo(numBots);
     jogo.iniciarJogo();
 
+    
+    system("pause");
     return 0;
 }
