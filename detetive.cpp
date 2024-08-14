@@ -3,6 +3,8 @@
 #include <string>
 #include <algorithm>
 #include <random>
+#include <map>
+#include <set>
 
 using namespace std;
 
@@ -64,8 +66,14 @@ public:
             }
             cout << endl;
         } else {
-            cout << nome << " não quer mostrar suas cartas." << endl;
+            cout << nome << " nao quer mostrar suas cartas." << endl;
         }
+    }
+
+    bool possuiCarta(const string& nomeCarta) const {
+        return any_of(cartas.begin(), cartas.end(), [&](const Carta& carta) {
+            return carta.getNome() == nomeCarta;
+        });
     }
 };
 
@@ -92,6 +100,16 @@ private:
     mt19937 rng;
     string localAtual; // Local onde o jogador está
     int movimento; // Número de movimentos com base no dado rolado
+    map<string, vector<string>> adjacencias; // Mapa de locais adjacentes
+
+    void inicializarAdjacencias() {
+        adjacencias["Salao"] = {"Salao de jogos", "Biblioteca"};
+        adjacencias["Salao de jogos"] = {"Salao", "Biblioteca", "Jardim de inverno"};
+        adjacencias["Biblioteca"] = {"Salao", "Salao de jogos", "Escritorio"};
+        adjacencias["Escritorio"] = {"Biblioteca", "Jardim de inverno"};
+        adjacencias["Jardim de inverno"] = {"Salao de jogos", "Escritorio", "Cozinha"};
+        adjacencias["Cozinha"] = {"Jardim de inverno"};
+    }
 
     int rolarDado() {
         uniform_int_distribution<int> dist(1, 6);
@@ -102,26 +120,28 @@ private:
         movimento = rolarDado();
         cout << jogador.nome << " rolou um " << movimento << "." << endl;
 
-        // Definir o novo local baseado na rolagem do dado
-        cout << "Escolha um local para mover (1: Salão, 2: Salão de jogos, 3: Biblioteca, 4: Escritório, 5: Jardim de inverno, 6: Cozinha): ";
+        // Mostrar locais possíveis com base nos movimentos e locais adjacentes
+        cout << "Escolha um local para mover: ";
+        vector<string> opcoesMoveis = adjacencias[localAtual];
+        for (size_t i = 0; i < opcoesMoveis.size(); ++i) {
+            cout << i + 1 << ": " << opcoesMoveis[i] << " ";
+        }
+        cout << endl;
+
         int escolha;
         cin >> escolha;
 
-        if (escolha >= 1 && escolha <= 6) {
-            localAtual = (escolha == 1) ? "Salão" :
-                         (escolha == 2) ? "Salão de jogos" :
-                         (escolha == 3) ? "Biblioteca" :
-                         (escolha == 4) ? "Escritório" :
-                         (escolha == 5) ? "Jardim de inverno" : "Cozinha";
+        if (escolha >= 1 && escolha <= static_cast<int>(opcoesMoveis.size())) {
+            localAtual = opcoesMoveis[escolha - 1];
             cout << jogador.nome << " se moveu para " << localAtual << "." << endl;
         } else {
-            cout << "Local inválido. O jogador permanece no mesmo lugar." << endl;
+            cout << "Local invalido. O jogador permanece no mesmo lugar." << endl;
         }
     }
 
     bool verificarPalpite(const Palpite& palpite) const {
         if (palpite.getSuspeito() == crime.suspeito && palpite.getArma() == crime.arma && palpite.getLocal() == crime.local) {
-            cout << "Você acertou! O crime foi cometido por " << crime.suspeito << " com " << crime.arma << " no " << crime.local << "." << endl;
+            cout << "Voce acertou! O crime foi cometido por " << crime.suspeito << " com " << crime.arma << " no " << crime.local << "." << endl;
             return false;
         } else {
             cout << "Palpite errado. Continue tentando." << endl;
@@ -143,11 +163,13 @@ private:
     }
 
 public:
-    Jogo(int numBots) : rng(random_device{}()), localAtual(""), movimento(0) {
+    Jogo(int numBots) : rng(random_device{}()), localAtual("Salao"), movimento(0) {
+        inicializarAdjacencias();
+        
         // Inicializar cartas
         vector<string> suspeitos = {"Coronel Mostarda", "Professor Black", "Senhor Marinho", "Senhora Violeta", "Dona Branca", "Senhora Vermelha"};
-        vector<string> armas = {"Faca", "Castiçal", "Revólver", "Corda", "Cano", "Chave inglesa"};
-        vector<string> locais = {"Salão", "Salão de jogos", "Biblioteca", "Escritório", "Jardim de inverno", "Cozinha"};
+        vector<string> armas = {"Faca", "Castical", "Revolver", "Corda", "Cano", "Chave inglesa"};
+        vector<string> locais = {"Salao", "Salao de jogos", "Biblioteca", "Escritorio", "Jardim de inverno", "Cozinha"};
 
         for (const auto& s : suspeitos) cartas.emplace_back("Suspeito", s);
         for (const auto& a : armas) cartas.emplace_back("Arma", a);
@@ -182,6 +204,10 @@ public:
             jogadores[jogadorAtual].receberCarta(carta);
             jogadorAtual = (jogadorAtual + 1) % jogadores.size();
         }
+
+        // Mostrar cartas do jogador no início
+        jogadores[0].mostrarCartas = true;
+        jogadores[0].mostrarCartasJogador();
     }
 
     void iniciarJogo() {
@@ -196,14 +222,39 @@ public:
                 } else {
                     // Mostrar cartas dos bots somente se um palpite é feito com uma carta do bot
                     jogador.mostrarCartas = false;
+                    botFazPalpite(jogador);
                 }
             }
         }
     }
 
+    void botFazPalpite(Jogador& bot) {
+        string suspeito, arma, local;
+
+        // Escolher palpite inteligente
+        for (const auto& carta : cartas) {
+            if (bot.possuiCarta(carta.getNome())) continue;
+
+            if (carta.getTipo() == "Suspeito") {
+                suspeito = carta.getNome();
+            } else if (carta.getTipo() == "Arma") {
+                arma = carta.getNome();
+            } else if (carta.getTipo() == "Local") {
+                local = carta.getNome();
+            }
+        }
+
+        if (local != localAtual) {
+            cout << bot.nome << " precisa se mover para " << local << " antes de fazer um palpite." << endl;
+        } else {
+            cout << bot.nome << " faz um palpite: " << suspeito << " com " << arma << " no " << local << "." << endl;
+            verificarPalpite(Palpite(suspeito, arma, local));
+        }
+    }
+
     bool darPalpite(Jogador& jogador) {
         string suspeito, arma, local;
-        cout << jogador.nome << ", faça seu palpite." << endl;
+        cout << jogador.nome << ", faca seu palpite." << endl;
 
         // Escolher opções de palpite
         cout << "Escolha um suspeito:" << endl;
@@ -215,14 +266,14 @@ public:
         getline(cin, suspeito);
 
         cout << "Escolha uma arma:" << endl;
-        for (const auto& a : {"Faca", "Castiçal", "Revólver", "Corda", "Cano", "Chave inglesa"}) {
+        for (const auto& a : {"Faca", "Castical", "Revolver", "Corda", "Cano", "Chave inglesa"}) {
             cout << a << endl;
         }
         cout << "Digite o nome da arma: ";
         getline(cin, arma);
 
         cout << "Escolha um local:" << endl;
-        for (const auto& l : {"Salão", "Salão de jogos", "Biblioteca", "Escritório", "Jardim de inverno", "Cozinha"}) {
+        for (const auto& l : {"Salao", "Salao de jogos", "Biblioteca", "Escritorio", "Jardim de inverno", "Cozinha"}) {
             cout << l << endl;
         }
         cout << "Digite o nome do local: ";
@@ -230,7 +281,7 @@ public:
 
         // Verificar se o jogador está no local correto
         if (local != localAtual) {
-            cout << "Você só pode dar palpite no local onde você está. Mova-se para o local correto primeiro." << endl;
+            cout << "Voce so pode dar palpite no local onde voce esta. Mova-se para o local correto primeiro." << endl;
             return true; // Continua o jogo
         }
 
@@ -238,7 +289,7 @@ public:
         string cartaBot = cartaBotInvolvida(suspeito, arma, local);
 
         if (!cartaBot.empty()) {
-            cout << "Atenção: O seu palpite inclui uma carta que um bot possui. A carta é: " << cartaBot << "." << endl;
+            cout << "Atencao: O seu palpite inclui uma carta que um bot possui. A carta é: " << cartaBot << "." << endl;
             for (auto& jogadorBot : jogadores) {
                 if (!jogadorBot.anfitriao) {
                     jogadorBot.mostrarCartas = true;
@@ -264,11 +315,11 @@ public:
 
 int main() {
     int numBots;
-    cout << "Digite o número de bots (1-5): ";
+    cout << "Digite o numero de bots (1-3): ";
     cin >> numBots;
 
-    if (numBots < 1 || numBots > 5) {
-        cout << "Número inválido de bots." << endl;
+    if (numBots < 1 || numBots > 3) {
+        cout << "Numero invalido de bots." << endl;
         return 1;
     }
 
