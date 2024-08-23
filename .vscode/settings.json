@@ -43,6 +43,8 @@
         "sstream": "cpp",
         "stdexcept": "cpp",
         "streambuf": "cpp",
-        "typeinfo": "cpp"
-    }
+        "typeinfo": "cpp",
+        "thread": "cpp"
+    },
+    "cmake.sourceDirectory": "C:/Users/janja/OneDrive/Área de Trabalho/POO/PRG22107/venv/Lib/site-packages/PySide2/examples/samplebinding"
 }
