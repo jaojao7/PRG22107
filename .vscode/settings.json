@@ -44,7 +44,11 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "typeinfo": "cpp",
-        "thread": "cpp"
+        "thread": "cpp",
+        "chrono": "cpp",
+        "unordered_set": "cpp",
+        "ratio": "cpp"
     },
-    "cmake.sourceDirectory": "C:/Users/janja/OneDrive/Área de Trabalho/POO/PRG22107/venv/Lib/site-packages/PySide2/examples/samplebinding"
+    "cmake.sourceDirectory": "C:/Users/janja/OneDrive/Área de Trabalho/POO/PRG22107/venv/Lib/site-packages/PySide2/examples/samplebinding",
+    "cmake.ignoreCMakeListsMissing": true
 }

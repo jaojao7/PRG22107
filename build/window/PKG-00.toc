@@ -56,14 +56,6 @@
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\styles\\qwindowsvistastyle.dll',
    'BINARY'),
-  ('PySide2\\opengl32sw.dll',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\Lib\\site-packages\\PySide2\\opengl32sw.dll',
-   'BINARY'),
-  ('PySide2\\libEGL.dll',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\Lib\\site-packages\\PySide2\\libEGL.dll',
-   'BINARY'),
   ('PySide2\\libGLESv2.dll',
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\Lib\\site-packages\\PySide2\\libGLESv2.dll',
@@ -72,85 +64,93 @@
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\Lib\\site-packages\\PySide2\\d3dcompiler_47.dll',
    'BINARY'),
+  ('PySide2\\opengl32sw.dll',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\Lib\\site-packages\\PySide2\\opengl32sw.dll',
+   'BINARY'),
+  ('PySide2\\libEGL.dll',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\Lib\\site-packages\\PySide2\\libEGL.dll',
+   'BINARY'),
   ('PySide2\\plugins\\bearer\\qgenericbearer.dll',
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\bearer\\qgenericbearer.dll',
-   'BINARY'),
-  ('PySide2\\plugins\\platforms\\qwindows.dll',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\platforms\\qwindows.dll',
-   'BINARY'),
-  ('PySide2\\plugins\\imageformats\\qsvg.dll',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qsvg.dll',
-   'BINARY'),
-  ('PySide2\\plugins\\imageformats\\qico.dll',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qico.dll',
-   'BINARY'),
-  ('PySide2\\plugins\\imageformats\\qtiff.dll',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qtiff.dll',
-   'BINARY'),
-  ('PySide2\\plugins\\iconengines\\qsvgicon.dll',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\iconengines\\qsvgicon.dll',
-   'BINARY'),
-  ('PySide2\\plugins\\platforms\\qoffscreen.dll',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\platforms\\qoffscreen.dll',
-   'BINARY'),
-  ('PySide2\\plugins\\platforminputcontexts\\qtvirtualkeyboardplugin.dll',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\platforminputcontexts\\qtvirtualkeyboardplugin.dll',
    'BINARY'),
   ('PySide2\\plugins\\platforms\\qdirect2d.dll',
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\platforms\\qdirect2d.dll',
    'BINARY'),
-  ('PySide2\\plugins\\platformthemes\\qxdgdesktopportal.dll',
+  ('PySide2\\plugins\\iconengines\\qsvgicon.dll',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\platformthemes\\qxdgdesktopportal.dll',
-   'BINARY'),
-  ('PySide2\\plugins\\imageformats\\qwbmp.dll',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qwbmp.dll',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\iconengines\\qsvgicon.dll',
    'BINARY'),
   ('PySide2\\plugins\\imageformats\\qjpeg.dll',
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qjpeg.dll',
    'BINARY'),
-  ('PySide2\\plugins\\imageformats\\qtga.dll',
+  ('PySide2\\plugins\\imageformats\\qgif.dll',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qtga.dll',
-   'BINARY'),
-  ('PySide2\\plugins\\imageformats\\qpdf.dll',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qpdf.dll',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qgif.dll',
    'BINARY'),
   ('PySide2\\plugins\\generic\\qtuiotouchplugin.dll',
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\generic\\qtuiotouchplugin.dll',
    'BINARY'),
-  ('PySide2\\plugins\\imageformats\\qgif.dll',
+  ('PySide2\\plugins\\platforminputcontexts\\qtvirtualkeyboardplugin.dll',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qgif.dll',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\platforminputcontexts\\qtvirtualkeyboardplugin.dll',
    'BINARY'),
-  ('PySide2\\plugins\\imageformats\\qicns.dll',
+  ('PySide2\\plugins\\imageformats\\qtiff.dll',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qicns.dll',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qtiff.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\platformthemes\\qxdgdesktopportal.dll',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\platformthemes\\qxdgdesktopportal.dll',
    'BINARY'),
   ('PySide2\\plugins\\imageformats\\qwebp.dll',
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qwebp.dll',
    'BINARY'),
+  ('PySide2\\plugins\\platforms\\qwebgl.dll',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\platforms\\qwebgl.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\imageformats\\qsvg.dll',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qsvg.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\platforms\\qwindows.dll',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\platforms\\qwindows.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\imageformats\\qpdf.dll',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qpdf.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\imageformats\\qtga.dll',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qtga.dll',
+   'BINARY'),
   ('PySide2\\plugins\\platforms\\qminimal.dll',
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\platforms\\qminimal.dll',
    'BINARY'),
-  ('PySide2\\plugins\\platforms\\qwebgl.dll',
+  ('PySide2\\plugins\\imageformats\\qwbmp.dll',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\platforms\\qwebgl.dll',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qwbmp.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\imageformats\\qicns.dll',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qicns.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\platforms\\qoffscreen.dll',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\platforms\\qoffscreen.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\imageformats\\qico.dll',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qico.dll',
    'BINARY'),
   ('_decimal.pyd',
    'C:\\Users\\janja\\AppData\\Local\\Programs\\Python\\Python310\\DLLs\\_decimal.pyd',
@@ -193,9 +193,33 @@
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\QtCore.pyd',
    'EXTENSION'),
+  ('api-ms-win-crt-math-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-math-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-string-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-string-l1-1-0.dll',
+   'BINARY'),
   ('api-ms-win-crt-heap-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
    'Toolkit\\api-ms-win-crt-heap-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-locale-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-locale-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-stdio-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-stdio-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-environment-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-environment-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-convert-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-convert-l1-1-0.dll',
    'BINARY'),
   ('api-ms-win-crt-runtime-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
@@ -205,44 +229,24 @@
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
    'Toolkit\\api-ms-win-crt-filesystem-l1-1-0.dll',
    'BINARY'),
+  ('api-ms-win-crt-process-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-process-l1-1-0.dll',
+   'BINARY'),
   ('api-ms-win-crt-time-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
    'Toolkit\\api-ms-win-crt-time-l1-1-0.dll',
    'BINARY'),
-  ('api-ms-win-crt-string-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-crt-string-l1-1-0.dll',
+  ('VCRUNTIME140.dll',
+   'C:\\Users\\janja\\AppData\\Local\\Programs\\Python\\Python310\\VCRUNTIME140.dll',
    'BINARY'),
   ('api-ms-win-crt-conio-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
    'Toolkit\\api-ms-win-crt-conio-l1-1-0.dll',
    'BINARY'),
-  ('api-ms-win-crt-locale-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-crt-locale-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-crt-convert-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-crt-convert-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-crt-math-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-crt-math-l1-1-0.dll',
-   'BINARY'),
-  ('VCRUNTIME140.dll',
-   'C:\\Users\\janja\\AppData\\Local\\Programs\\Python\\Python310\\VCRUNTIME140.dll',
-   'BINARY'),
-  ('api-ms-win-crt-process-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-crt-process-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-crt-environment-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-crt-environment-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-crt-stdio-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-crt-stdio-l1-1-0.dll',
+  ('PySide2\\Qt5Gui.dll',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\Qt5Gui.dll',
    'BINARY'),
   ('VCRUNTIME140_1.dll',
    'C:\\Users\\janja\\AppData\\Local\\Programs\\Python\\Python310\\VCRUNTIME140_1.dll',
@@ -255,14 +259,6 @@
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\Qt5Widgets.dll',
    'BINARY'),
-  ('PySide2\\Qt5Gui.dll',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\Qt5Gui.dll',
-   'BINARY'),
-  ('PySide2\\VCRUNTIME140.dll',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\Lib\\site-packages\\PySide2\\VCRUNTIME140.dll',
-   'BINARY'),
   ('PySide2\\VCRUNTIME140_1.dll',
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\Lib\\site-packages\\PySide2\\VCRUNTIME140_1.dll',
@@ -271,67 +267,71 @@
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\Lib\\site-packages\\PySide2\\MSVCP140.dll',
    'BINARY'),
+  ('PySide2\\VCRUNTIME140.dll',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\Lib\\site-packages\\PySide2\\VCRUNTIME140.dll',
+   'BINARY'),
   ('PySide2\\Qt5Network.dll',
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\Qt5Network.dll',
-   'BINARY'),
-  ('api-ms-win-crt-utility-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-crt-utility-l1-1-0.dll',
    'BINARY'),
   ('shiboken2\\MSVCP140.dll',
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\shiboken2\\MSVCP140.dll',
    'BINARY'),
+  ('api-ms-win-crt-utility-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-utility-l1-1-0.dll',
+   'BINARY'),
   ('PySide2\\Qt5Svg.dll',
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\Qt5Svg.dll',
-   'BINARY'),
-  ('PySide2\\Qt5VirtualKeyboard.dll',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\Qt5VirtualKeyboard.dll',
    'BINARY'),
   ('PySide2\\Qt5Qml.dll',
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\Qt5Qml.dll',
    'BINARY'),
+  ('PySide2\\Qt5VirtualKeyboard.dll',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\Qt5VirtualKeyboard.dll',
+   'BINARY'),
   ('PySide2\\Qt5DBus.dll',
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\Qt5DBus.dll',
-   'BINARY'),
-  ('PySide2\\Qt5Pdf.dll',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\Qt5Pdf.dll',
-   'BINARY'),
-  ('PySide2\\Qt5Quick.dll',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\Qt5Quick.dll',
    'BINARY'),
   ('PySide2\\Qt5WebSockets.dll',
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\Qt5WebSockets.dll',
    'BINARY'),
+  ('PySide2\\Qt5Quick.dll',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\Qt5Quick.dll',
+   'BINARY'),
+  ('PySide2\\Qt5Pdf.dll',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\Qt5Pdf.dll',
+   'BINARY'),
   ('libcrypto-1_1.dll',
    'C:\\Users\\janja\\AppData\\Local\\Programs\\Python\\Python310\\DLLs\\libcrypto-1_1.dll',
-   'BINARY'),
-  ('PySide2\\pyside2.abi3.dll',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\pyside2.abi3.dll',
    'BINARY'),
   ('shiboken2\\shiboken2.abi3.dll',
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\shiboken2\\shiboken2.abi3.dll',
    'BINARY'),
+  ('PySide2\\pyside2.abi3.dll',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\pyside2.abi3.dll',
+   'BINARY'),
   ('python3.dll',
    'C:\\Users\\janja\\AppData\\Local\\Programs\\Python\\Python310\\python3.dll',
-   'BINARY'),
-  ('shiboken2\\VCRUNTIME140_1.dll',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\shiboken2\\VCRUNTIME140_1.dll',
    'BINARY'),
   ('shiboken2\\VCRUNTIME140.dll',
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\shiboken2\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('shiboken2\\VCRUNTIME140_1.dll',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\shiboken2\\VCRUNTIME140_1.dll',
    'BINARY'),
   ('ucrtbase.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
@@ -345,357 +345,245 @@
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\Qt5QmlModels.dll',
    'BINARY'),
-  ('api-ms-win-core-file-l1-1-0.dll',
+  ('api-ms-win-core-interlocked-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-file-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-localization-l1-2-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-localization-l1-2-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-console-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-console-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-processthreads-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-processthreads-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-util-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-util-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-file-l2-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-file-l2-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-timezone-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-timezone-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-processthreads-l1-1-1.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-processthreads-l1-1-1.dll',
-   'BINARY'),
-  ('api-ms-win-core-libraryloader-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-libraryloader-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-synch-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-synch-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-rtlsupport-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-rtlsupport-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-datetime-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-datetime-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-file-l1-2-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-file-l1-2-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-namedpipe-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-namedpipe-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-string-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-string-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-debug-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-debug-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-errorhandling-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-errorhandling-l1-1-0.dll',
+   'Toolkit\\api-ms-win-core-interlocked-l1-1-0.dll',
    'BINARY'),
   ('api-ms-win-core-sysinfo-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
    'Toolkit\\api-ms-win-core-sysinfo-l1-1-0.dll',
    'BINARY'),
-  ('api-ms-win-core-memory-l1-1-0.dll',
+  ('api-ms-win-core-string-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-memory-l1-1-0.dll',
+   'Toolkit\\api-ms-win-core-string-l1-1-0.dll',
    'BINARY'),
   ('api-ms-win-core-processenvironment-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
    'Toolkit\\api-ms-win-core-processenvironment-l1-1-0.dll',
    'BINARY'),
+  ('api-ms-win-core-util-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-util-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'BINARY'),
   ('api-ms-win-core-heap-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
    'Toolkit\\api-ms-win-core-heap-l1-1-0.dll',
    'BINARY'),
-  ('api-ms-win-core-profile-l1-1-0.dll',
+  ('api-ms-win-core-memory-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-profile-l1-1-0.dll',
+   'Toolkit\\api-ms-win-core-memory-l1-1-0.dll',
    'BINARY'),
-  ('api-ms-win-core-interlocked-l1-1-0.dll',
+  ('api-ms-win-core-errorhandling-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-interlocked-l1-1-0.dll',
+   'Toolkit\\api-ms-win-core-errorhandling-l1-1-0.dll',
    'BINARY'),
-  ('api-ms-win-core-synch-l1-2-0.dll',
+  ('api-ms-win-core-datetime-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-synch-l1-2-0.dll',
+   'Toolkit\\api-ms-win-core-datetime-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-namedpipe-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-namedpipe-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l2-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-file-l2-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-2-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-file-l1-2-0.dll',
    'BINARY'),
   ('api-ms-win-core-handle-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
    'Toolkit\\api-ms-win-core-handle-l1-1-0.dll',
    'BINARY'),
+  ('api-ms-win-core-libraryloader-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-libraryloader-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-1.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-processthreads-l1-1-1.dll',
+   'BINARY'),
+  ('api-ms-win-core-profile-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-profile-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-localization-l1-2-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-localization-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-timezone-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-timezone-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-debug-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-debug-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-synch-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-file-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-2-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-synch-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-processthreads-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-console-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-console-l1-1-0.dll',
+   'BINARY'),
   ('base_library.zip',
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\build\\window\\base_library.zip',
-   'DATA'),
-  ('PySide2\\translations\\qt_help_de.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_de.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_hu.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_hu.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_he.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_he.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_help_zh_TW.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_zh_TW.qm',
-   'DATA'),
-  ('PySide2\\translations\\qtbase_en.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_en.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_lt.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_lt.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_sl.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_sl.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_en.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_en.qm',
-   'DATA'),
-  ('PySide2\\translations\\qtbase_it.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_it.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_help_sk.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_sk.qm',
-   'DATA'),
-  ('PySide2\\translations\\qtbase_cs.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_cs.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_cs.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_cs.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_help_pl.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_pl.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_help_hu.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_hu.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_help_ca.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_ca.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_sv.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_sv.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_help_zh_CN.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_zh_CN.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_fi.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_fi.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_pt.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_pt.qm',
-   'DATA'),
-  ('PySide2\\translations\\qtbase_fi.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_fi.qm',
    'DATA'),
   ('PySide2\\translations\\qt_fr.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_fr.qm',
    'DATA'),
-  ('PySide2\\translations\\qtbase_zh_TW.qm',
+  ('PySide2\\translations\\qt_gl.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_zh_TW.qm',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_gl.qm',
    'DATA'),
-  ('PySide2\\translations\\qt_help_gl.qm',
+  ('PySide2\\translations\\qt_help_cs.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_gl.qm',
-   'DATA'),
-  ('PySide2\\translations\\qtbase_ar.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_ar.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_es.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_es.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_it.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_it.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_zh_CN.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_zh_CN.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_fa.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_fa.qm',
-   'DATA'),
-  ('PySide2\\translations\\qtbase_ru.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_ru.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_gd.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_gd.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_help_bg.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_bg.qm',
-   'DATA'),
-  ('PySide2\\translations\\qtbase_he.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_he.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_da.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_da.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_help_it.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_it.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_uk.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_uk.qm',
-   'DATA'),
-  ('PySide2\\translations\\qtbase_pl.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_pl.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_ar.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_ar.qm',
-   'DATA'),
-  ('PySide2\\translations\\qtbase_tr.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_tr.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_help_uk.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_uk.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_help_tr.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_tr.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_bg.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_bg.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_ja.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_ja.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_help_da.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_da.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_help_en.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_en.qm',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_cs.qm',
    'DATA'),
   ('PySide2\\translations\\qt_help_fr.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_fr.qm',
    'DATA'),
-  ('PySide2\\translations\\qtbase_lv.qm',
+  ('PySide2\\translations\\qt_help_gl.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_lv.qm',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_gl.qm',
    'DATA'),
-  ('PySide2\\translations\\qt_help_es.qm',
+  ('PySide2\\translations\\qt_help_hu.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_es.qm',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_hu.qm',
    'DATA'),
-  ('PySide2\\translations\\qt_help_ko.qm',
+  ('PySide2\\translations\\qt_help_uk.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_ko.qm',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_uk.qm',
    'DATA'),
-  ('PySide2\\translations\\qtbase_ca.qm',
+  ('PySide2\\translations\\qt_help_sk.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_ca.qm',
-   'DATA'),
-  ('PySide2\\translations\\qtbase_hu.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_hu.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_de.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_de.qm',
-   'DATA'),
-  ('PySide2\\translations\\qtbase_gd.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_gd.qm',
-   'DATA'),
-  ('PySide2\\translations\\qt_help_ar.qm',
-   'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_ar.qm',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_sk.qm',
    'DATA'),
   ('PySide2\\translations\\qt_ko.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_ko.qm',
    'DATA'),
-  ('PySide2\\translations\\qtbase_fr.qm',
+  ('PySide2\\translations\\qt_sk.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_fr.qm',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_sk.qm',
    'DATA'),
-  ('PySide2\\translations\\qtbase_sk.qm',
+  ('PySide2\\translations\\qtbase_it.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_sk.qm',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_it.qm',
    'DATA'),
-  ('PySide2\\translations\\qt_pl.qm',
+  ('PySide2\\translations\\qt_help_pl.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_pl.qm',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_pl.qm',
    'DATA'),
-  ('PySide2\\translations\\qt_lv.qm',
+  ('PySide2\\translations\\qt_en.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_lv.qm',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_en.qm',
    'DATA'),
-  ('PySide2\\translations\\qt_ru.qm',
+  ('PySide2\\translations\\qtbase_pl.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_ru.qm',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_pl.qm',
    'DATA'),
-  ('PySide2\\translations\\qt_tr.qm',
+  ('PySide2\\translations\\qt_help_sl.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_tr.qm',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_sl.qm',
    'DATA'),
   ('PySide2\\translations\\qtbase_de.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_de.qm',
    'DATA'),
+  ('PySide2\\translations\\qt_help_ar.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_ar.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_help_zh_CN.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_zh_CN.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_es.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_es.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_help_tr.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_tr.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_zh_CN.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_zh_CN.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_gd.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_gd.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_help_es.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_es.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_ca.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_ca.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_it.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_it.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_help_bg.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_bg.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_ar.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_ar.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_da.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_da.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_help_en.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_en.qm',
+   'DATA'),
   ('PySide2\\translations\\qt_zh_TW.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_zh_TW.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_tr.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_tr.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_ca.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_ca.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_lv.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_lv.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_hu.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_hu.qm',
    'DATA'),
   ('PySide2\\translations\\qt_help_ja.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
@@ -705,49 +593,161 @@
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_ru.qm',
    'DATA'),
-  ('PySide2\\translations\\qt_help_sl.qm',
+  ('PySide2\\translations\\qt_ar.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_sl.qm',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_ar.qm',
    'DATA'),
-  ('PySide2\\translations\\qtbase_da.qm',
+  ('PySide2\\translations\\qt_help_zh_TW.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_da.qm',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_zh_TW.qm',
    'DATA'),
-  ('PySide2\\translations\\qtbase_bg.qm',
+  ('PySide2\\translations\\qt_ja.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_bg.qm',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_ja.qm',
    'DATA'),
-  ('PySide2\\translations\\qt_ca.qm',
+  ('PySide2\\translations\\qt_sv.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_ca.qm',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_sv.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_sl.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_sl.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_uk.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_uk.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_hu.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_hu.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_help_de.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_de.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_fi.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_fi.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_he.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_he.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_cs.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_cs.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_ko.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_ko.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_gd.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_gd.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_bg.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_bg.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_tr.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_tr.qm',
    'DATA'),
   ('PySide2\\translations\\qtbase_uk.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_uk.qm',
    'DATA'),
-  ('PySide2\\translations\\qt_help_cs.qm',
+  ('PySide2\\translations\\qt_es.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_cs.qm',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_es.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_bg.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_bg.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_da.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_da.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_ru.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_ru.qm',
    'DATA'),
   ('PySide2\\translations\\qtbase_ja.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
    'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_ja.qm',
    'DATA'),
-  ('PySide2\\translations\\qt_sk.qm',
+  ('PySide2\\translations\\qt_help_ko.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_sk.qm',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_ko.qm',
    'DATA'),
-  ('PySide2\\translations\\qtbase_es.qm',
+  ('PySide2\\translations\\qt_ru.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_es.qm',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_ru.qm',
    'DATA'),
-  ('PySide2\\translations\\qt_gl.qm',
+  ('PySide2\\translations\\qt_fa.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_gl.qm',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_fa.qm',
    'DATA'),
-  ('PySide2\\translations\\qtbase_ko.qm',
+  ('PySide2\\translations\\qtbase_lv.qm',
    'C:\\Users\\janja\\OneDrive\\Área de '
-   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_ko.qm',
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_lv.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_help_da.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_da.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_help_ca.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_ca.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_zh_TW.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_zh_TW.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_pl.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_pl.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_en.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_en.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_pt.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_pt.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_cs.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_cs.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_fr.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_fr.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_he.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_he.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_sk.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_sk.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_fi.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_fi.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_help_it.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_help_it.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_de.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_de.qm',
+   'DATA'),
+  ('PySide2\\translations\\qt_lt.qm',
+   'C:\\Users\\janja\\OneDrive\\Área de '
+   'Trabalho\\POO\\PRG22107\\venv\\lib\\site-packages\\PySide2\\translations\\qt_lt.qm',
    'DATA')],
  'python310.dll',
  False,

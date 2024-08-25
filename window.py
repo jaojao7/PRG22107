@@ -14,6 +14,21 @@ from PySide2.QtWidgets import *
 from PySide2.QtWidgets import QApplication, QWidget
 import sys
 
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'untitledhsanwS.ui'
+##
+## Created by: Qt User Interface Compiler version 5.15.3
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
+
+
 class Ui_CADERNETA(object):
     def setupUi(self, CADERNETA):
         if not CADERNETA.objectName():
@@ -32,7 +47,7 @@ class Ui_CADERNETA(object):
         CADERNETA.setAutoFillBackground(False)
         self.checkBox = QCheckBox(CADERNETA)
         self.checkBox.setObjectName(u"checkBox")
-        self.checkBox.setGeometry(QRect(20, 70, 131, 20))
+        self.checkBox.setGeometry(QRect(190, 60, 131, 20))
         sizePolicy1 = QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
         sizePolicy1.setHorizontalStretch(0)
         sizePolicy1.setVerticalStretch(0)
@@ -48,12 +63,12 @@ class Ui_CADERNETA(object):
         self.checkBox.setIconSize(QSize(100, 100))
         self.textBrowser_3 = QTextBrowser(CADERNETA)
         self.textBrowser_3.setObjectName(u"textBrowser_3")
-        self.textBrowser_3.setGeometry(QRect(-190, 0, 1401, 301))
+        self.textBrowser_3.setGeometry(QRect(-210, 0, 1401, 301))
         sizePolicy1.setHeightForWidth(self.textBrowser_3.sizePolicy().hasHeightForWidth())
         self.textBrowser_3.setSizePolicy(sizePolicy1)
         self.checkBox_2 = QCheckBox(CADERNETA)
         self.checkBox_2.setObjectName(u"checkBox_2")
-        self.checkBox_2.setGeometry(QRect(20, 110, 131, 20))
+        self.checkBox_2.setGeometry(QRect(190, 100, 131, 20))
         sizePolicy1.setHeightForWidth(self.checkBox_2.sizePolicy().hasHeightForWidth())
         self.checkBox_2.setSizePolicy(sizePolicy1)
         self.checkBox_2.setMinimumSize(QSize(0, 0))
@@ -62,7 +77,7 @@ class Ui_CADERNETA(object):
         self.checkBox_2.setIconSize(QSize(100, 100))
         self.checkBox_3 = QCheckBox(CADERNETA)
         self.checkBox_3.setObjectName(u"checkBox_3")
-        self.checkBox_3.setGeometry(QRect(20, 150, 131, 20))
+        self.checkBox_3.setGeometry(QRect(190, 140, 131, 20))
         sizePolicy1.setHeightForWidth(self.checkBox_3.sizePolicy().hasHeightForWidth())
         self.checkBox_3.setSizePolicy(sizePolicy1)
         self.checkBox_3.setMinimumSize(QSize(0, 0))
@@ -71,7 +86,7 @@ class Ui_CADERNETA(object):
         self.checkBox_3.setIconSize(QSize(100, 100))
         self.checkBox_4 = QCheckBox(CADERNETA)
         self.checkBox_4.setObjectName(u"checkBox_4")
-        self.checkBox_4.setGeometry(QRect(20, 190, 131, 20))
+        self.checkBox_4.setGeometry(QRect(190, 180, 131, 20))
         sizePolicy1.setHeightForWidth(self.checkBox_4.sizePolicy().hasHeightForWidth())
         self.checkBox_4.setSizePolicy(sizePolicy1)
         self.checkBox_4.setMinimumSize(QSize(0, 0))
@@ -80,7 +95,7 @@ class Ui_CADERNETA(object):
         self.checkBox_4.setIconSize(QSize(100, 100))
         self.checkBox_5 = QCheckBox(CADERNETA)
         self.checkBox_5.setObjectName(u"checkBox_5")
-        self.checkBox_5.setGeometry(QRect(20, 230, 131, 20))
+        self.checkBox_5.setGeometry(QRect(190, 220, 131, 20))
         sizePolicy1.setHeightForWidth(self.checkBox_5.sizePolicy().hasHeightForWidth())
         self.checkBox_5.setSizePolicy(sizePolicy1)
         self.checkBox_5.setMinimumSize(QSize(0, 0))
@@ -89,7 +104,7 @@ class Ui_CADERNETA(object):
         self.checkBox_5.setIconSize(QSize(100, 100))
         self.checkBox_16 = QCheckBox(CADERNETA)
         self.checkBox_16.setObjectName(u"checkBox_16")
-        self.checkBox_16.setGeometry(QRect(20, 270, 131, 20))
+        self.checkBox_16.setGeometry(QRect(190, 260, 131, 20))
         sizePolicy1.setHeightForWidth(self.checkBox_16.sizePolicy().hasHeightForWidth())
         self.checkBox_16.setSizePolicy(sizePolicy1)
         self.checkBox_16.setMinimumSize(QSize(0, 0))
@@ -152,7 +167,7 @@ class Ui_CADERNETA(object):
         self.checkBox_10.setIconSize(QSize(100, 100))
         self.checkBox_11 = QCheckBox(CADERNETA)
         self.checkBox_11.setObjectName(u"checkBox_11")
-        self.checkBox_11.setGeometry(QRect(780, 120, 131, 20))
+        self.checkBox_11.setGeometry(QRect(670, 130, 131, 20))
         sizePolicy1.setHeightForWidth(self.checkBox_11.sizePolicy().hasHeightForWidth())
         self.checkBox_11.setSizePolicy(sizePolicy1)
         self.checkBox_11.setMinimumSize(QSize(0, 0))
@@ -161,7 +176,7 @@ class Ui_CADERNETA(object):
         self.checkBox_11.setIconSize(QSize(100, 100))
         self.checkBox_12 = QCheckBox(CADERNETA)
         self.checkBox_12.setObjectName(u"checkBox_12")
-        self.checkBox_12.setGeometry(QRect(780, 200, 131, 20))
+        self.checkBox_12.setGeometry(QRect(670, 210, 131, 20))
         sizePolicy1.setHeightForWidth(self.checkBox_12.sizePolicy().hasHeightForWidth())
         self.checkBox_12.setSizePolicy(sizePolicy1)
         self.checkBox_12.setMinimumSize(QSize(0, 0))
@@ -170,7 +185,7 @@ class Ui_CADERNETA(object):
         self.checkBox_12.setIconSize(QSize(100, 100))
         self.checkBox_13 = QCheckBox(CADERNETA)
         self.checkBox_13.setObjectName(u"checkBox_13")
-        self.checkBox_13.setGeometry(QRect(780, 80, 131, 20))
+        self.checkBox_13.setGeometry(QRect(670, 90, 131, 20))
         sizePolicy1.setHeightForWidth(self.checkBox_13.sizePolicy().hasHeightForWidth())
         self.checkBox_13.setSizePolicy(sizePolicy1)
         self.checkBox_13.setMinimumSize(QSize(0, 0))
@@ -179,7 +194,7 @@ class Ui_CADERNETA(object):
         self.checkBox_13.setIconSize(QSize(100, 100))
         self.checkBox_14 = QCheckBox(CADERNETA)
         self.checkBox_14.setObjectName(u"checkBox_14")
-        self.checkBox_14.setGeometry(QRect(780, 160, 131, 20))
+        self.checkBox_14.setGeometry(QRect(670, 170, 131, 20))
         sizePolicy1.setHeightForWidth(self.checkBox_14.sizePolicy().hasHeightForWidth())
         self.checkBox_14.setSizePolicy(sizePolicy1)
         self.checkBox_14.setMinimumSize(QSize(0, 0))
@@ -188,7 +203,7 @@ class Ui_CADERNETA(object):
         self.checkBox_14.setIconSize(QSize(100, 100))
         self.checkBox_18 = QCheckBox(CADERNETA)
         self.checkBox_18.setObjectName(u"checkBox_18")
-        self.checkBox_18.setGeometry(QRect(780, 240, 131, 20))
+        self.checkBox_18.setGeometry(QRect(670, 250, 131, 20))
         sizePolicy1.setHeightForWidth(self.checkBox_18.sizePolicy().hasHeightForWidth())
         self.checkBox_18.setSizePolicy(sizePolicy1)
         self.checkBox_18.setMinimumSize(QSize(0, 0))
@@ -197,7 +212,7 @@ class Ui_CADERNETA(object):
         self.checkBox_18.setIconSize(QSize(100, 100))
         self.checkBox_15 = QCheckBox(CADERNETA)
         self.checkBox_15.setObjectName(u"checkBox_15")
-        self.checkBox_15.setGeometry(QRect(780, 50, 131, 20))
+        self.checkBox_15.setGeometry(QRect(670, 60, 131, 20))
         sizePolicy1.setHeightForWidth(self.checkBox_15.sizePolicy().hasHeightForWidth())
         self.checkBox_15.setSizePolicy(sizePolicy1)
         self.checkBox_15.setMinimumSize(QSize(0, 0))
@@ -206,7 +221,7 @@ class Ui_CADERNETA(object):
         self.checkBox_15.setIconSize(QSize(100, 100))
         self.checkBox_19 = QCheckBox(CADERNETA)
         self.checkBox_19.setObjectName(u"checkBox_19")
-        self.checkBox_19.setGeometry(QRect(20, 70, 131, 20))
+        self.checkBox_19.setGeometry(QRect(190, 60, 131, 20))
         sizePolicy1.setHeightForWidth(self.checkBox_19.sizePolicy().hasHeightForWidth())
         self.checkBox_19.setSizePolicy(sizePolicy1)
         self.checkBox_19.setMinimumSize(QSize(0, 0))
@@ -226,7 +241,7 @@ class Ui_CADERNETA(object):
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">LOCAIS				ARMAS					SUSPEITOS</span></p></body></html>", None))
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">LOCAIS		ARMAS		SUSPEITOS</span></p></body></html>", None))
         self.checkBox_2.setText(QCoreApplication.translate("CADERNETA", u"Almox", None))
         self.checkBox_3.setText(QCoreApplication.translate("CADERNETA", u"Entrada", None))
         self.checkBox_4.setText(QCoreApplication.translate("CADERNETA", u"Cantina", None))
@@ -246,6 +261,9 @@ class Ui_CADERNETA(object):
         self.checkBox_15.setText(QCoreApplication.translate("CADERNETA", u"Thaine", None))
         self.checkBox_19.setText(QCoreApplication.translate("CADERNETA", u"Biblioteca", None))
     # retranslateUi
+
+
+
 
 
 
