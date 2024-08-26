@@ -218,17 +218,20 @@ private:
     }
 
 public:
-  void distribuirCartas() {
+    void distribuirCartas() {
+        shuffle(cartas.begin(), cartas.end(), rng);  // Embaralha as cartas antes de distribuir
+
         size_t jogadorAtual = 0;
         for (const auto& carta : cartas) {
             jogadores[jogadorAtual].receberCarta(carta);
-            jogadorAtual = (jogadorAtual + 1) % jogadores.size();
+            jogadorAtual = (jogadorAtual + 1) % jogadores.size();  // Distribui as cartas alternadamente entre os jogadores
         }
 
         // Mostra as cartas do jogador no início do jogo
         jogadores[0].mostrarCartas = true;
         jogadores[0].mostrarCartasJogador();
     }
+
     Jogo(int numBots) : rng(random_device{}()), localAtual("Banheiro"), movimento(0) { // Contrutor da classe jogo
         inicializarAdjacencias(); // inicializa as localizações do tabuleiro
         
@@ -245,6 +248,8 @@ public:
         uniform_int_distribution<int> dist_suspeito(0, suspeitos.size() - 1);
         uniform_int_distribution<int> dist_arma(0, armas.size() - 1);
         uniform_int_distribution<int> dist_local(0, locais.size() - 1);
+
+        rng.seed(static_cast<unsigned>(time(0)));
 
         string suspeito = suspeitos[dist_suspeito(rng)];
         string arma = armas[dist_arma(rng)];
