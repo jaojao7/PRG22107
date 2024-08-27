@@ -126,12 +126,12 @@ private:
     map<string, vector<string>> adjacencias; // Mapa de locais adjacentes
 
     void inicializarAdjacencias() { // Método para definir as adjacenciais (proximidades) dos locais no tabuleiro virtual
-        adjacencias["Banheiro"] = {"Laboratório", "Biblioteca", "Local Vazio"};
-        adjacencias["Laboratório"] = {"Banheiro", "Biblioteca","Local Vazio", "Almox"};
-        adjacencias["Biblioteca"] = {"Banheiro", "Laboratório","Local Vazio", "Entrada"};
-        adjacencias["Entrada"] = {"Biblioteca", "Almox","Local Vazio"};
-        adjacencias["Almox"] = {"Laboratório", "Entrada","Local Vazio", "Cantina","Local Vazio"};
-        adjacencias["Cantina"] = {"Almox","Local Vazio"};
+        adjacencias["Banheiro"] = {"Laboratório", "Biblioteca",};
+        adjacencias["Laboratório"] = {"Banheiro", "Biblioteca", "Almox"};
+        adjacencias["Biblioteca"] = {"Banheiro", "Laboratório","Entrada"};
+        adjacencias["Entrada"] = {"Biblioteca", "Almox"};
+        adjacencias["Almox"] = {"Laboratório", "Entrada", "Cantina"};
+        adjacencias["Cantina"] = {"Almox"};
     }
 
     class Dado {
@@ -204,18 +204,19 @@ private:
         }
     }
 
-    string cartaBotInvolvida(const string& suspeito, const string& arma, const string& local) const { // Método para verificar se algum bot possui a carta palpite do jogador
-        for (const auto& jogador : jogadores) {
-            if (!jogador.anfitriao) { // Verifica apenas bots
-                for (const auto& carta : jogador.cartas) {
-                    if (carta.getNome() == suspeito || carta.getNome() == arma || carta.getNome() == local) {
-                        return carta.getNome(); // Retorna a carta envolvida 
-                    }
+    string cartaBotInvolvida(const string& suspeito, const string& arma, const string& local) const {
+    for (const auto& jogador : jogadores) {
+        if (!jogador.anfitriao) { // Verifica apenas bots
+            for (const auto& carta : jogador.cartas) {
+                if (carta.getNome() == suspeito || carta.getNome() == arma || carta.getNome() == local) {
+                    return carta.getNome(); // Retorna a carta envolvida
                 }
             }
         }
-        return ""; // Retorna vazio se nenhuma carta do bot estiver envolvida
     }
+    return ""; // Retorna vazio se nenhuma carta do bot estiver envolvida
+    }
+
 
 public:
     void distribuirCartas() {
@@ -305,63 +306,101 @@ public:
         }
     }
 
- void botFazPalpite(Jogador& bot) {
+void botFazPalpite(Jogador& bot) {
     string suspeito, arma, local;
 
-    // Escolher o palpite inteligente
+    // Vetores para armazenar as opções disponíveis que o bot NÃO possui
+    vector<string> suspeitosDisponiveis, armasDisponiveis, locaisDisponiveis;
+
+    // Adicionar às listas apenas as cartas que o bot não possui
     for (const auto& carta : cartas) {
         if (bot.possuiCarta(carta.getNome())) continue;
 
         if (carta.getTipo() == "Suspeito") {
-            suspeito = carta.getNome();
+            suspeitosDisponiveis.push_back(carta.getNome());
         } else if (carta.getTipo() == "Arma") {
-            arma = carta.getNome();
+            armasDisponiveis.push_back(carta.getNome());
         } else if (carta.getTipo() == "Local") {
-            local = carta.getNome();
+            locaisDisponiveis.push_back(carta.getNome());
         }
     }
+
+    // Verificar se as listas estão vazias antes de escolher
+    if (!suspeitosDisponiveis.empty()) {
+        suspeito = suspeitosDisponiveis[rng() % suspeitosDisponiveis.size()];
+    } else {
+        // Se estiver vazio, escolher uma carta aleatória de todos os suspeitos
+        vector<string> todosSuspeitos = {"Thaine", "Diana", "João Pedro", "Eduardo", "Giovanna", "Hugo"};
+        suspeito = todosSuspeitos[rng() % todosSuspeitos.size()];
+    }
+
+    if (!armasDisponiveis.empty()) {
+        arma = armasDisponiveis[rng() % armasDisponiveis.size()];
+    } else {
+        // Se estiver vazio, escolher uma carta aleatória de todas as armas
+        vector<string> todasArmas = {"Faca", "Chave de Fenda", "Ferro de Solda", "Livro de Eletrônica", "Transformador", "Soprador Térmico"};
+        arma = todasArmas[rng() % todasArmas.size()];
+    }
+
+    if (!locaisDisponiveis.empty()) {
+        local = locaisDisponiveis[rng() % locaisDisponiveis.size()];
+    } else {
+        // Se estiver vazio, escolher uma carta aleatória de todos os locais
+        vector<string> todosLocais = {"Banheiro", "Laboratório", "Biblioteca", "Entrada", "Almox", "Cantina"};
+        local = todosLocais[rng() % todosLocais.size()];
+    }
+
+    // O bot faz o palpite com as cartas escolhidas
     cout << bot.nome << " faz um palpite: " << suspeito << " com " << arma << " no " << local << "." << endl;
     verificarPalpite(Palpite(suspeito, arma, local));
 }
 
+
+
     bool darPalpite(Jogador& jogador) {
-        string suspeito, arma, local;
-        cout << jogador.nome << ", faca seu palpite." << endl;
+    string suspeito, arma, local;
+    cout << jogador.nome << ", faca seu palpite." << endl;
 
-        // Escolher opções de palpite
-        cout << "Escolha um suspeito:" << endl;
-        for (const auto& s : {"Thaine", "Diana", "João Pedro", "Eduardo", "Giovanna", "Hugo"}) {
-            cout << s << endl;
-        }
-        cout << "Digite o nome do suspeito: ";
-        cin.ignore();
-        getline(cin, suspeito);
-
-        cout << "Escolha uma arma:" << endl;
-        for (const auto& a : {"Faca", "Chave de Fenda", "Ferro de Solda", "Livro de Eletrônica", "Transformador", "Soprador Térmico"}) {
-            cout << a << endl;
-        }
-        cout << "Digite o nome da arma: ";
-        getline(cin, arma);
-
-        cout << "Escolha um local:" << endl;
-        for (const auto& l : {"Banheiro", "Laboratório", "Biblioteca", "Entrada", "Almox", "Cantina"}) {
-            cout << l << endl;
-        }
-        local = jogador.localAtual;
-
-
-        // Verificar se o palpite inclui uma carta dos bots
-        string cartaBot = cartaBotInvolvida(suspeito, arma, local);
-
-        if (!cartaBot.empty()) {
-            cout << "Atencao: O seu palpite inclui uma carta que um bot possui. A carta é: " << cartaBot << "." << endl;
-        }
-
-        bool resultado = verificarPalpite(Palpite(suspeito, arma, local));
-
-        return resultado;
+    // Escolher opções de palpite
+    cout << "Escolha um suspeito:" << endl;
+    for (const auto& s : {"Thaine", "Diana", "João Pedro", "Eduardo", "Giovanna", "Hugo"}) {
+        cout << s << endl;
     }
+    cout << "Digite o nome do suspeito: ";
+    cin.ignore();
+    getline(cin, suspeito);
+
+    cout << "Escolha uma arma:" << endl;
+    for (const auto& a : {"Faca", "Chave de Fenda", "Ferro de Solda", "Livro de Eletrônica", "Transformador", "Soprador Térmico"}) {
+        cout << a << endl;
+    }
+    cout << "Digite o nome da arma: ";
+    getline(cin, arma);
+
+    cout << "Escolha um local:" << endl;
+    for (const auto& l : {"Banheiro", "Laboratório", "Biblioteca", "Entrada", "Almox", "Cantina"}) {
+        cout << l << endl;
+    }
+    local = jogador.localAtual;
+
+    // Verificar se o jogador já possui uma das cartas
+    if (jogador.possuiCarta(suspeito) || jogador.possuiCarta(arma) || jogador.possuiCarta(local)) {
+        cout << "Você já possui uma dessas cartas. Tente novamente." << endl;
+        return true;
+    }
+
+    // Verificar se o palpite inclui uma carta dos bots
+    string cartaBot = cartaBotInvolvida(suspeito, arma, local);
+
+    if (!cartaBot.empty()) {
+        cout << "Atencao: O seu palpite inclui uma carta que um bot possui. A carta é: " << cartaBot << "." << endl;
+    }
+
+    bool resultado = verificarPalpite(Palpite(suspeito, arma, local));
+
+    return resultado;
+}
+
 };
 
 int main() {
