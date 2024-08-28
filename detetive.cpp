@@ -204,7 +204,7 @@ private:
         }
     }
 
-    string cartaBotInvolvida(const string& suspeito, const string& arma, const string& local) const {
+    string cartaBotEnvolvida(const string& suspeito, const string& arma, const string& local) const {
     for (const auto& jogador : jogadores) {
         if (!jogador.anfitriao) { // Verifica apenas bots
             for (const auto& carta : jogador.cartas) {
@@ -233,7 +233,7 @@ public:
         jogadores[0].mostrarCartasJogador();
     }
 
-    Jogo(int numBots) : rng(random_device{}()), localAtual("Banheiro"), movimento(0) { // Contrutor da classe jogo
+    Jogo(int numBots) : rng(random_device{}()), localAtual("Entrada"), movimento(0) { // Contrutor da classe jogo
         inicializarAdjacencias(); // inicializa as localizações do tabuleiro
         
         // Inicializa as cartas
@@ -325,19 +325,19 @@ void botFazPalpite(Jogador& bot) {
         }
     }
 
-    // Verificar se as listas estão vazias antes de escolher
     if (!suspeitosDisponiveis.empty()) {
         suspeito = suspeitosDisponiveis[rng() % suspeitosDisponiveis.size()];
     } else {
-        // Se estiver vazio, escolher uma carta aleatória de todos os suspeitos
+   
         vector<string> todosSuspeitos = {"Thaine", "Diana", "João Pedro", "Eduardo", "Giovanna", "Hugo"};
         suspeito = todosSuspeitos[rng() % todosSuspeitos.size()];
+       
     }
 
     if (!armasDisponiveis.empty()) {
         arma = armasDisponiveis[rng() % armasDisponiveis.size()];
     } else {
-        // Se estiver vazio, escolher uma carta aleatória de todas as armas
+        
         vector<string> todasArmas = {"Faca", "Chave de Fenda", "Ferro de Solda", "Livro de Eletrônica", "Transformador", "Soprador Térmico"};
         arma = todasArmas[rng() % todasArmas.size()];
     }
@@ -345,7 +345,7 @@ void botFazPalpite(Jogador& bot) {
     if (!locaisDisponiveis.empty()) {
         local = locaisDisponiveis[rng() % locaisDisponiveis.size()];
     } else {
-        // Se estiver vazio, escolher uma carta aleatória de todos os locais
+        
         vector<string> todosLocais = {"Banheiro", "Laboratório", "Biblioteca", "Entrada", "Almox", "Cantina"};
         local = todosLocais[rng() % todosLocais.size()];
     }
@@ -390,7 +390,7 @@ void botFazPalpite(Jogador& bot) {
     }
 
     // Verificar se o palpite inclui uma carta dos bots
-    string cartaBot = cartaBotInvolvida(suspeito, arma, local);
+    string cartaBot = cartaBotEnvolvida(suspeito, arma, local);
 
     if (!cartaBot.empty()) {
         cout << "Atencao: O seu palpite inclui uma carta que um bot possui. A carta é: " << cartaBot << "." << endl;
