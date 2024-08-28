@@ -86,4 +86,10 @@ Não há. O jogo é encerrado e as vitórias não são computadas.
 # **Diagrama**
 
 
-![PRG22107/Imagens/Detetive.jpeg](https://github.com/jaojao7/PRG22107/blob/main/Imagens/Detetive.jpeg)
+![PRG22107/Imagens/Detetive.jpg](https://github.com/jaojao7/PRG22107/blob/main/Imagens/Detetive.jpg)
+
+# **Mapa dos locais**
+
+![PRG22107/Imagens/Mapas.png](https://github.com/jaojao7/PRG22107/blob/main/Imagens/Mapas.png)
+
+
