@@ -8,7 +8,7 @@
 #include <locale>  
 #include <windows.h>
 #include <cstdlib>
-#include <thread>
+
 
 using namespace std;
 
