@@ -54,12 +54,11 @@ class Jogador { // Classe jogador
 public:
     string nome; // Atributo Nome 
     vector<Carta> cartas; // Atributo cartas do jogar
-    bool anfitriao; //
+    bool humano; //
     bool mostrarCartas; // Controla a exibição das cartas
     string localAtual;  // Local onde o jogador está
 
-    Jogador(string nome, bool anfitriao = false) 
-        : nome(nome), anfitriao(anfitriao), mostrarCartas(false), localAtual("Banheiro") {} // Construtor
+    Jogador(string nome, bool humano = false) : nome(nome), humano(humano), mostrarCartas(false), localAtual("Entrada") {} // Construtor
 
     void receberCarta(Carta carta) { // Método para receber as cartas
         cartas.push_back(carta);
@@ -206,7 +205,7 @@ private:
 
     string cartaBotEnvolvida(const string& suspeito, const string& arma, const string& local) const {
     for (const auto& jogador : jogadores) {
-        if (!jogador.anfitriao) { // Verifica apenas bots
+        if (!jogador.humano) { // Verifica apenas bots
             for (const auto& carta : jogador.cartas) {
                 if (carta.getNome() == suspeito || carta.getNome() == arma || carta.getNome() == local) {
                     return carta.getNome(); // Retorna a carta envolvida
@@ -282,7 +281,7 @@ public:
         char escolha;
         while (jogoAtivo) {
             for (auto& jogador : jogadores) {
-                if (jogador.anfitriao) {
+                if (jogador.humano) {
                     moverJogador(jogador);
 
                     cout << "Deseja dar palpite? (aperte 's')" << endl;
@@ -422,7 +421,6 @@ int main() {
     cout << "Hugo é um professor dedicado e enigmático, está à espreita daqueles que são suspeitos.\n";
     cout << "João é um aluno astuto e perspicaz, mas associado a eventos suspeitos dentro da instituição.\n";
     cout << "Thaine é uma aluna discreta e atraente, sempre fornecendo informações úteis sobre as pessoas.\n" << endl;
-
     cout << "PRESSIONE ENTER PARA CONTNUAR..."   << endl;
 
 
