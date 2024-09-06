@@ -8,7 +8,7 @@
 #include <locale>  
 #include <windows.h>
 #include <cstdlib>
-
+#include <thread>
 
 using namespace std;
 
@@ -54,11 +54,12 @@ class Jogador { // Classe jogador
 public:
     string nome; // Atributo Nome 
     vector<Carta> cartas; // Atributo cartas do jogar
-    bool humano; //
+    bool anfitriao; //
     bool mostrarCartas; // Controla a exibição das cartas
     string localAtual;  // Local onde o jogador está
 
-    Jogador(string nome, bool humano = false) : nome(nome), humano(humano), mostrarCartas(false), localAtual("Entrada") {} // Construtor
+    Jogador(string nome, bool anfitriao = false) 
+        : nome(nome), anfitriao(anfitriao), mostrarCartas(false), localAtual("Banheiro") {} // Construtor
 
     void receberCarta(Carta carta) { // Método para receber as cartas
         cartas.push_back(carta);
@@ -125,9 +126,9 @@ private:
     map<string, vector<string>> adjacencias; // Mapa de locais adjacentes
 
     void inicializarAdjacencias() { // Método para definir as adjacenciais (proximidades) dos locais no tabuleiro virtual
-        adjacencias["Banheiro"] = {"Laboratório", "Biblioteca",};
+        adjacencias["Banheiro"] = {"Laboratório", "Biblioteca", "Local Vazio"};
         adjacencias["Laboratório"] = {"Banheiro", "Biblioteca", "Almox"};
-        adjacencias["Biblioteca"] = {"Banheiro", "Laboratório","Entrada"};
+        adjacencias["Biblioteca"] = {"Banheiro", "Laboratório", "Entrada"};
         adjacencias["Entrada"] = {"Biblioteca", "Almox"};
         adjacencias["Almox"] = {"Laboratório", "Entrada", "Cantina"};
         adjacencias["Cantina"] = {"Almox"};
@@ -203,35 +204,31 @@ private:
         }
     }
 
-    string cartaBotEnvolvida(const string& suspeito, const string& arma, const string& local) const {
-    for (const auto& jogador : jogadores) {
-        if (!jogador.humano) { // Verifica apenas bots
-            for (const auto& carta : jogador.cartas) {
-                if (carta.getNome() == suspeito || carta.getNome() == arma || carta.getNome() == local) {
-                    return carta.getNome(); // Retorna a carta envolvida
+    string cartaBotInvolvida(const string& suspeito, const string& arma, const string& local) const { // Método para verificar se algum bot possui a carta palpite do jogador
+        for (const auto& jogador : jogadores) {
+            if (!jogador.anfitriao) { // Verifica apenas bots
+                for (const auto& carta : jogador.cartas) {
+                    if (carta.getNome() == suspeito || carta.getNome() == arma || carta.getNome() == local) {
+                        return carta.getNome(); // Retorna a carta envolvida 
+                    }
                 }
             }
         }
+        return ""; // Retorna vazio se nenhuma carta do bot estiver envolvida
     }
-    return ""; // Retorna vazio se nenhuma carta do bot estiver envolvida
-    }
-
 
 public:
-    void distribuirCartas() {
-        shuffle(cartas.begin(), cartas.end(), rng);  // Embaralha as cartas antes de distribuir
-
+  void distribuirCartas() {
         size_t jogadorAtual = 0;
         for (const auto& carta : cartas) {
             jogadores[jogadorAtual].receberCarta(carta);
-            jogadorAtual = (jogadorAtual + 1) % jogadores.size();  // Distribui as cartas alternadamente entre os jogadores
+            jogadorAtual = (jogadorAtual + 1) % jogadores.size();
         }
 
         // Mostra as cartas do jogador no início do jogo
         jogadores[0].mostrarCartas = true;
         jogadores[0].mostrarCartasJogador();
     }
-
     Jogo(int numBots) : rng(random_device{}()), localAtual("Entrada"), movimento(0) { // Contrutor da classe jogo
         inicializarAdjacencias(); // inicializa as localizações do tabuleiro
         
@@ -248,8 +245,6 @@ public:
         uniform_int_distribution<int> dist_suspeito(0, suspeitos.size() - 1);
         uniform_int_distribution<int> dist_arma(0, armas.size() - 1);
         uniform_int_distribution<int> dist_local(0, locais.size() - 1);
-
-        rng.seed(static_cast<unsigned>(time(0)));
 
         string suspeito = suspeitos[dist_suspeito(rng)];
         string arma = armas[dist_arma(rng)];
@@ -281,7 +276,7 @@ public:
         char escolha;
         while (jogoAtivo) {
             for (auto& jogador : jogadores) {
-                if (jogador.humano) {
+                if (jogador.anfitriao) {
                     moverJogador(jogador);
 
                     cout << "Deseja dar palpite? (aperte 's')" << endl;
@@ -305,101 +300,63 @@ public:
         }
     }
 
-void botFazPalpite(Jogador& bot) {
+ void botFazPalpite(Jogador& bot) {
     string suspeito, arma, local;
 
-    // Vetores para armazenar as opções disponíveis que o bot NÃO possui
-    vector<string> suspeitosDisponiveis, armasDisponiveis, locaisDisponiveis;
-
-    // Adicionar às listas apenas as cartas que o bot não possui
+    // Escolher o palpite inteligente
     for (const auto& carta : cartas) {
         if (bot.possuiCarta(carta.getNome())) continue;
 
         if (carta.getTipo() == "Suspeito") {
-            suspeitosDisponiveis.push_back(carta.getNome());
+            suspeito = carta.getNome();
         } else if (carta.getTipo() == "Arma") {
-            armasDisponiveis.push_back(carta.getNome());
+            arma = carta.getNome();
         } else if (carta.getTipo() == "Local") {
-            locaisDisponiveis.push_back(carta.getNome());
+            local = carta.getNome();
         }
     }
-
-    if (!suspeitosDisponiveis.empty()) {
-        suspeito = suspeitosDisponiveis[rng() % suspeitosDisponiveis.size()];
-    } else {
-   
-        vector<string> todosSuspeitos = {"Thaine", "Diana", "João Pedro", "Eduardo", "Giovanna", "Hugo"};
-        suspeito = todosSuspeitos[rng() % todosSuspeitos.size()];
-       
-    }
-
-    if (!armasDisponiveis.empty()) {
-        arma = armasDisponiveis[rng() % armasDisponiveis.size()];
-    } else {
-        
-        vector<string> todasArmas = {"Faca", "Chave de Fenda", "Ferro de Solda", "Livro de Eletrônica", "Transformador", "Soprador Térmico"};
-        arma = todasArmas[rng() % todasArmas.size()];
-    }
-
-    if (!locaisDisponiveis.empty()) {
-        local = locaisDisponiveis[rng() % locaisDisponiveis.size()];
-    } else {
-        
-        vector<string> todosLocais = {"Banheiro", "Laboratório", "Biblioteca", "Entrada", "Almox", "Cantina"};
-        local = todosLocais[rng() % todosLocais.size()];
-    }
-
-    // O bot faz o palpite com as cartas escolhidas
     cout << bot.nome << " faz um palpite: " << suspeito << " com " << arma << " no " << local << "." << endl;
     verificarPalpite(Palpite(suspeito, arma, local));
 }
 
-
-
     bool darPalpite(Jogador& jogador) {
-    string suspeito, arma, local;
-    cout << jogador.nome << ", faca seu palpite." << endl;
+        string suspeito, arma, local;
+        cout << jogador.nome << ", faca seu palpite." << endl;
 
-    // Escolher opções de palpite
-    cout << "Escolha um suspeito:" << endl;
-    for (const auto& s : {"Thaine", "Diana", "João Pedro", "Eduardo", "Giovanna", "Hugo"}) {
-        cout << s << endl;
+        // Escolher opções de palpite
+        cout << "Escolha um suspeito:" << endl;
+        for (const auto& s : {"Thaine", "Diana", "João Pedro", "Eduardo", "Giovanna", "Hugo"}) {
+            cout << s << endl;
+        }
+        cout << "Digite o nome do suspeito: ";
+        cin.ignore();
+        getline(cin, suspeito);
+
+        cout << "Escolha uma arma:" << endl;
+        for (const auto& a : {"Faca", "Chave de Fenda", "Ferro de Solda", "Livro de Eletrônica", "Transformador", "Soprador Térmico"}) {
+            cout << a << endl;
+        }
+        cout << "Digite o nome da arma: ";
+        getline(cin, arma);
+
+        cout << "Escolha um local:" << endl;
+        for (const auto& l : {"Banheiro", "Laboratório", "Biblioteca", "Entrada", "Almox", "Cantina"}) {
+            cout << l << endl;
+        }
+        local = jogador.localAtual;
+
+
+        // Verificar se o palpite inclui uma carta dos bots
+        string cartaBot = cartaBotInvolvida(suspeito, arma, local);
+
+        if (!cartaBot.empty()) {
+            cout << "Atencao: O seu palpite inclui uma carta que um bot possui. A carta é: " << cartaBot << "." << endl;
+        }
+
+        bool resultado = verificarPalpite(Palpite(suspeito, arma, local));
+
+        return resultado;
     }
-    cout << "Digite o nome do suspeito: ";
-    cin.ignore();
-    getline(cin, suspeito);
-
-    cout << "Escolha uma arma:" << endl;
-    for (const auto& a : {"Faca", "Chave de Fenda", "Ferro de Solda", "Livro de Eletrônica", "Transformador", "Soprador Térmico"}) {
-        cout << a << endl;
-    }
-    cout << "Digite o nome da arma: ";
-    getline(cin, arma);
-
-    cout << "Escolha um local:" << endl;
-    for (const auto& l : {"Banheiro", "Laboratório", "Biblioteca", "Entrada", "Almox", "Cantina"}) {
-        cout << l << endl;
-    }
-    local = jogador.localAtual;
-
-    // Verificar se o jogador já possui uma das cartas
-    if (jogador.possuiCarta(suspeito) || jogador.possuiCarta(arma) || jogador.possuiCarta(local)) {
-        cout << "Você já possui uma dessas cartas. Tente novamente." << endl;
-        return true;
-    }
-
-    // Verificar se o palpite inclui uma carta dos bots
-    string cartaBot = cartaBotEnvolvida(suspeito, arma, local);
-
-    if (!cartaBot.empty()) {
-        cout << "Atencao: O seu palpite inclui uma carta que um bot possui. A carta é: " << cartaBot << "." << endl;
-    }
-
-    bool resultado = verificarPalpite(Palpite(suspeito, arma, local));
-
-    return resultado;
-}
-
 };
 
 int main() {
@@ -421,6 +378,7 @@ int main() {
     cout << "Hugo é um professor dedicado e enigmático, está à espreita daqueles que são suspeitos.\n";
     cout << "João é um aluno astuto e perspicaz, mas associado a eventos suspeitos dentro da instituição.\n";
     cout << "Thaine é uma aluna discreta e atraente, sempre fornecendo informações úteis sobre as pessoas.\n" << endl;
+
     cout << "PRESSIONE ENTER PARA CONTNUAR..."   << endl;
 
 
